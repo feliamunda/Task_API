@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Categoria
+  body
+    form(method="POST" action=`/categories/${category.id}?_method=PUT`)
+      input(type="text" name="title" placeholder="Titulo")=category.title
+      input(type="color" name="color")=category.color
+      input(type="submit" value="Guardar")
